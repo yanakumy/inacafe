@@ -1,0 +1,463 @@
+@charset "utf-8";
+/*
+Theme name: MY THEME
+author: YANAGI KUMIKO
+Description:INACAFE
+Version: 2018.11.26
+*/
+
+/* 共通 */
+body {
+	background-image: url(img/s_paper04.jpg)
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-justify-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* TOP画面 左側 */
+.main-visual-left {
+	width: 33%;
+	height: auto;
+	text-align: center;
+
+	div img {
+		width: 80%;
+		height: auto;
+		padding: 10% 0;
+	}
+	
+}
+
+.inacafe-logo {
+	margin-top: 15%;
+}
+
+.inakuma {
+	width: 40%;
+	height: auto;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* TOP画面 右側 */
+
+.main-visual-right {
+	width: 100%;
+
+	.shop-img img {
+		width: 100%;
+		height: auto;
+		border-radius: 0 0 0 15px;
+	}
+}
+
+/* TOP画面 全体*/
+header {
+	border-bottom: dashed 1px;
+}
+.global-nav li {
+	text-align: center;	
+	margin-top: 4%;
+
+	a {
+		text-decoration: none;
+		color: black;
+		font-size: 0.6rem;
+	}
+
+	div img {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+		height: auto;
+	}
+	.icon-menu {
+		position: relative;
+		left: 22%;
+	}
+	.icon-service {
+		position: relative;
+		left: 6%;
+	}
+
+}
+
+/* message */
+.container-message {
+	margin: 8% 0;
+	// justify-content: center;
+	.about-inacafe {
+		text-align: center;
+		p {
+			font-size: 0.7rem;
+		}
+	}
+	img {
+		width: 65%;
+		height: auto;
+		margin: auto;
+	}
+	.message {
+		margin: 0 0 0 6%;
+		line-height: 2rem;
+		font-size: 0.9rem;
+	}
+}
+
+/* service */
+.container-service {
+	margin: 8% 0;
+	justify-content: center;
+	img {
+		width: 45%;
+		height: auto;
+		margin: auto;
+	}
+	.service {
+		text-align: center;
+		p {
+			font-size: 0.7rem;
+		}
+	}
+	.service-p {
+		font-size: 0.9rem;
+		margin-top: 1rem;
+	}
+}
+
+/* menu */
+.container-menu  {
+	width:80%;
+	background-color: rgb(240, 131, 35);
+	border-radius: 0 13px 13px 0;
+
+	.inside-container-menu {
+		flex-direction: column;
+		padding: 4% 4% 4% 20%;
+		font-size: 0.8rem;
+		> p {
+			text-align: center;
+			margin: 0 0 0 -16%;
+		}
+	}
+		img {
+		margin: 3% auto -4% auto;
+		}
+	ul {
+		font-weight: bold;
+		.fdm-item-title, .fdm-item-price {
+			font-weight: 300;
+		}
+	}
+}
+
+/* acces-map */
+.container-access  {
+	width: 80%;
+	position: relative;
+	left: 20%;
+	background-color: rgb(30, 30, 30);
+	border-radius: 13px 0 0 0;
+	padding: 5% 0;
+	flex-direction: row;
+	.address p{
+		font-size: 0.8rem;
+		padding: 0 0 0 10%;
+		line-height: 1.5rem;
+	}
+
+	.text-info{
+		margin: 0 5% 0 10%;
+	}
+	
+	p, a {
+		text-decoration: none;
+		line-height: 2rem;
+		color: rgba(253, 211, 163, 0.842);
+		font-size: 0.9rem;
+	}
+	.text-right {	
+		margin: 0 0 3% 8%;
+		a{
+			font-size: 0.8rem;
+			color: black;
+			padding: 0.8% 8%;
+			border-radius:3px;
+			background-color: rgba(253, 211, 163, 0.842);
+		}
+	}
+	img {
+		width: 60%;
+		height: auto;
+		padding: 0 8%;
+	}
+}
+
+/* footer */
+.footer {
+	background-color: rgb(240, 131, 35);
+	padding: 1.2rem;
+	text-align: center;
+	small{
+		color: white;
+		font-size: 0.7rem;
+	}
+}
+
+
+/*-----------------------ここからブログページsingle.phpのスタイル----------------*/
+.container-2 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* 記事の概要 */
+.excerpt img{
+	float: left;
+	margin-right: 40px;
+}
+
+/* 記事 */
+article {
+	margin: 30px 0;
+	padding-bottom: 100px;
+	border-bottom: dotted 0.5px #888;
+}
+
+article h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: normal;
+}
+article h1 a {
+    color: #000;
+    text-decoration: none;
+}
+article p{
+	line-height: 1.8rem;
+	margin: 1rem 0;
+}
+
+
+/* 記事の付加情報 投稿日、カテゴリ、コメント数 */
+.postinfo {
+    font-size: 14px;
+	margin: 15px 0;
+	i {
+		color: #888;
+	}
+}
+time, .postinfo a {
+    color: #888;
+    text-decoration: none;
+}
+.postinfo .postcat {
+    margin-left: 20px;
+}
+.postinfo .postcom {
+    margin-left: 20px;
+}
+
+/* 前後の記事へのリンク */
+.pagenav a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+}
+.pagenav .old a {
+    float: left;
+}
+.pagenav .new a {
+    float: right;
+}
+.pagenav {
+	overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+ /* ブログメニューのウィジェット */
+.blogmenu {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .widget {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #e8e8e8;
+    }
+    .widgettitle {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+	}
+	li{
+		color: #666;
+        font-size: 14px;
+	}
+    li a {
+		display: block;
+		padding: 10px 5px;
+        color: #666;
+		font-size: 14px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #fff;
+    	}
+	}
+}
+
+/* コメント投稿フォーム */
+#respond {
+
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 200px;
+        padding: 10px;
+        border: none;
+        background-color: #fa0;
+        appearance: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color:  rgb(240, 131, 35);
+        }
+    }
+
+    .required {
+        color: #f00;
+    }
+
+}// #respond
+
+
+/* コメントの表示 */
+#comments {
+
+    footer {
+        background: none;
+        margin: 0;
+        color: #000;
+        font-size: 12px;
+
+        a {
+            color: #000;
+        }
+
+        div {
+            display: inline;
+        }
+    } //footer
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    article {
+        border: 1px dotted #aaa;
+        margin-bottom: 10px;
+        padding: 10px 20px 20px 20px;
+    }
+
+    .comment-content {
+		margin: 1.5rem;
+		p{
+			font-size: 0.8rem;
+		}
+    }
+
+} // #comments
+
+/* indexページのグローバルnav */
+.index-page-global-nav-icon {
+	width: 100%;
+	// padding: 10px;
+	border-bottom:dashed 1px;
+	}
+
+/* -----------------------レスポンシブ-----------------------*/
+/* TOP 画面 */
+@media screen and (max-width:768px){
+	header {
+		flex-direction: column;
+	}
+	.main-visual-left {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.inacafe-logo {
+		margin: -20% 0;
+	}
+	.inakuma {
+		width: 30%;
+		margin-top: -20%;
+	}
+
+	.shop-img {
+		width: 95%;
+		height: auto;
+		position: relative;
+		left: 5%;
+	}
+	.container-menu  {
+		width:95%;
+	}
+	.container-access  {
+		width: 95%;
+		position: relative;
+		left: 5%;
+	}
+}
+
+/* ブログtopページ */
+@media screen and (max-width:768px){
+ .excerpt .attachment-thumbnail{
+	width: 150px;
+	height: 150px;
+ }
+}
+
+/* ブログ個別ページ */
+@media screen and (max-width:768px){
+ .container-2 article img {
+	width: 90vw;
+	height: auto;
+ }
+}
